@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+min-height: 100vh;
+background-image: url(images/pattern-background-desktop.svg);
+font-size: 16px;
+font-family: 'Red Hat Display', sans-serif;
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-color:  hsl(225, 100%, 94%);
+ position: relative;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.text-content{
+padding: 7%;
+text-align: center;
+}
+.title{
+color: hsl(223, 47%, 23%);
+font-weight: 500rem;
+font-size: 30px;
+margin-bottom: 6%;
+}
+.sub-title{
+    color: rgb(12, 3, 32);
+    margin-bottom: 6%;
+font-size: 16px;
+}
+.price{
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    padding: 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.music-img{
+    display: flex;
+    gap: 16px;
+
+}
+h5{
+    font-weight: 900;
+    color:hsl(223, 47%, 23%);
+}
+.Change{
+    font-weight: 900;
+    text-decoration: underline;
+    color:hsl(223, 47%, 23%);
+}
+.Change:hover{
+    color: hsl(245, 75%, 52%);
+
+}
+
+.btn1{
+    display: block;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 20px 0;
+    border-radius: 12px;
+    margin: 28px 0;
+    font-weight: 900;
+    box-shadow:  0px 0px 35px hsl(225, 53%, 77%) ;
+}
+.btn1:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+.btn2{
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+
+}
+.btn2:hover{
+    color: hsl(223, 47%, 23%);
+    text-decoration: line-through;
+}
+@media(max-width:425px ){
+    .body{
+      font-size: 13px;
+      letter-spacing: 10ch;
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+.container{
+    max-width: 86%;
+    
+}
+.title{
+    font-size: 23px;
+}
+
+}
